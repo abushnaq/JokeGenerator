@@ -7,13 +7,41 @@
 
 import Foundation
 
+let defaultJokeCategory = "dad"
+public class LoadedJokes : ObservableObject {
+    private var jokeFetcher : JokeFetcher = JokeFetcher()
+    
+    @Published var jokeCategory : String?
+    // default categories will get overwritten by result from API call
+    @Published var jokeCategories : [String] = ["general","knock-knock","programming","dad"]
+    
+    @Published var jokes : [Joke] = [Joke]()
+    
+    func fetchJokesByCategory() async
+    {
+        jokes = await jokeFetcher.fetchJokesByCategory(jokeCategory ?? defaultJokeCategory)
+    }
+    
+    func fetchJokeCategories() async
+    {
+        DispatchQueue.main.async
+        {
+            Task
+            {
+                self.jokeCategories = await self.jokeFetcher.fetchJokeCategories()
+            }
+        }
+    }
+    
+}
+
+
 struct Joke : Codable, Hashable
 {
     var type : String
     var setup : String
     var punchline : String
     var id : Int
-    
 }
 
 public class JokeFetcher

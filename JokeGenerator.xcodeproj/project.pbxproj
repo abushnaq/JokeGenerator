@@ -15,6 +15,9 @@
 		7F31DCB12C53F77C00C7C85A /* JokeGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31DCB02C53F77C00C7C85A /* JokeGeneratorUITests.swift */; };
 		7F31DCB32C53F77C00C7C85A /* JokeGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31DCB22C53F77C00C7C85A /* JokeGeneratorUITestsLaunchTests.swift */; };
 		7F31DCC02C53F7D700C7C85A /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31DCBF2C53F7D700C7C85A /* Jokes.swift */; };
+		7FDF60262C61132100C1CF42 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31DCBF2C53F7D700C7C85A /* Jokes.swift */; };
+		7FDF60282C61170F00C1CF42 /* CategorySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF60272C61170F00C1CF42 /* CategorySelector.swift */; };
+		7FDF602A2C6156ED00C1CF42 /* ShowJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF60292C6156ED00C1CF42 /* ShowJoke.swift */; };
 		7FF840772C5BC92100C21C21 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF840762C5BC92100C21C21 /* WidgetKit.framework */; };
 		7FF840792C5BC92100C21C21 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF840782C5BC92100C21C21 /* SwiftUI.framework */; };
 		7FF8407C2C5BC92100C21C21 /* JokeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF8407B2C5BC92100C21C21 /* JokeWidgetBundle.swift */; };
@@ -23,6 +26,14 @@
 		7FF840842C5BC92400C21C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF840832C5BC92400C21C21 /* Assets.xcassets */; };
 		7FF840882C5BC92400C21C21 /* JokeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7FF840742C5BC92100C21C21 /* JokeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7FF8408D2C5BCE0E00C21C21 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31DCBF2C53F7D700C7C85A /* Jokes.swift */; };
+		7FF840B22C5C283B00C21C21 /* JokeWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF840B12C5C283B00C21C21 /* JokeWatchApp.swift */; };
+		7FF840B42C5C283B00C21C21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF840B32C5C283B00C21C21 /* ContentView.swift */; };
+		7FF840B62C5C283D00C21C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF840B52C5C283D00C21C21 /* Assets.xcassets */; };
+		7FF840B92C5C283D00C21C21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF840B82C5C283D00C21C21 /* Preview Assets.xcassets */; };
+		7FF840C32C5C283E00C21C21 /* JokeWatch_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF840C22C5C283E00C21C21 /* JokeWatch_Watch_AppTests.swift */; };
+		7FF840CD2C5C283E00C21C21 /* JokeWatch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF840CC2C5C283E00C21C21 /* JokeWatch_Watch_AppUITests.swift */; };
+		7FF840CF2C5C283E00C21C21 /* JokeWatch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF840CE2C5C283E00C21C21 /* JokeWatch_Watch_AppUITestsLaunchTests.swift */; };
+		7FF840D22C5C283E00C21C21 /* JokeWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7FF840AF2C5C283B00C21C21 /* JokeWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,27 @@
 			remoteGlobalIDString = 7FF840732C5BC92100C21C21;
 			remoteInfo = JokeWidgetExtension;
 		};
+		7FF840BF2C5C283E00C21C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F31DC892C53F77A00C7C85A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF840AE2C5C283B00C21C21;
+			remoteInfo = "JokeWatch Watch App";
+		};
+		7FF840C92C5C283E00C21C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F31DC892C53F77A00C7C85A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF840AE2C5C283B00C21C21;
+			remoteInfo = "JokeWatch Watch App";
+		};
+		7FF840D02C5C283E00C21C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F31DC892C53F77A00C7C85A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF840AE2C5C283B00C21C21;
+			remoteInfo = "JokeWatch Watch App";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +91,17 @@
 				7FF840882C5BC92400C21C21 /* JokeWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF840D32C5C283E00C21C21 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7FF840D22C5C283E00C21C21 /* JokeWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -76,6 +119,8 @@
 		7F31DCB02C53F77C00C7C85A /* JokeGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeGeneratorUITests.swift; sourceTree = "<group>"; };
 		7F31DCB22C53F77C00C7C85A /* JokeGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F31DCBF2C53F7D700C7C85A /* Jokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
+		7FDF60272C61170F00C1CF42 /* CategorySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelector.swift; sourceTree = "<group>"; };
+		7FDF60292C6156ED00C1CF42 /* ShowJoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowJoke.swift; sourceTree = "<group>"; };
 		7FF840742C5BC92100C21C21 /* JokeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JokeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF840762C5BC92100C21C21 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		7FF840782C5BC92100C21C21 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -84,6 +129,16 @@
 		7FF840812C5BC92100C21C21 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		7FF840832C5BC92400C21C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FF840852C5BC92400C21C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF840AF2C5C283B00C21C21 /* JokeWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JokeWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF840B12C5C283B00C21C21 /* JokeWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeWatchApp.swift; sourceTree = "<group>"; };
+		7FF840B32C5C283B00C21C21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7FF840B52C5C283D00C21C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FF840B82C5C283D00C21C21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FF840BE2C5C283E00C21C21 /* JokeWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JokeWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF840C22C5C283E00C21C21 /* JokeWatch_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeWatch_Watch_AppTests.swift; sourceTree = "<group>"; };
+		7FF840C82C5C283E00C21C21 /* JokeWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JokeWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF840CC2C5C283E00C21C21 /* JokeWatch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeWatch_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		7FF840CE2C5C283E00C21C21 /* JokeWatch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeWatch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +172,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FF840AC2C5C283B00C21C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF840BB2C5C283E00C21C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF840C52C5C283E00C21C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,6 +203,9 @@
 				7F31DCA52C53F77C00C7C85A /* JokeGeneratorTests */,
 				7F31DCAF2C53F77C00C7C85A /* JokeGeneratorUITests */,
 				7FF8407A2C5BC92100C21C21 /* JokeWidget */,
+				7FF840B02C5C283B00C21C21 /* JokeWatch Watch App */,
+				7FF840C12C5C283E00C21C21 /* JokeWatch Watch AppTests */,
+				7FF840CB2C5C283E00C21C21 /* JokeWatch Watch AppUITests */,
 				7FF840752C5BC92100C21C21 /* Frameworks */,
 				7F31DC922C53F77A00C7C85A /* Products */,
 			);
@@ -139,6 +218,9 @@
 				7F31DCA22C53F77C00C7C85A /* JokeGeneratorTests.xctest */,
 				7F31DCAC2C53F77C00C7C85A /* JokeGeneratorUITests.xctest */,
 				7FF840742C5BC92100C21C21 /* JokeWidgetExtension.appex */,
+				7FF840AF2C5C283B00C21C21 /* JokeWatch Watch App.app */,
+				7FF840BE2C5C283E00C21C21 /* JokeWatch Watch AppTests.xctest */,
+				7FF840C82C5C283E00C21C21 /* JokeWatch Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,6 +284,44 @@
 			path = JokeWidget;
 			sourceTree = "<group>";
 		};
+		7FF840B02C5C283B00C21C21 /* JokeWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				7FF840B12C5C283B00C21C21 /* JokeWatchApp.swift */,
+				7FF840B32C5C283B00C21C21 /* ContentView.swift */,
+				7FDF60272C61170F00C1CF42 /* CategorySelector.swift */,
+				7FF840B52C5C283D00C21C21 /* Assets.xcassets */,
+				7FF840B72C5C283D00C21C21 /* Preview Content */,
+				7FDF60292C6156ED00C1CF42 /* ShowJoke.swift */,
+			);
+			path = "JokeWatch Watch App";
+			sourceTree = "<group>";
+		};
+		7FF840B72C5C283D00C21C21 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7FF840B82C5C283D00C21C21 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7FF840C12C5C283E00C21C21 /* JokeWatch Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FF840C22C5C283E00C21C21 /* JokeWatch_Watch_AppTests.swift */,
+			);
+			path = "JokeWatch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		7FF840CB2C5C283E00C21C21 /* JokeWatch Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7FF840CC2C5C283E00C21C21 /* JokeWatch_Watch_AppUITests.swift */,
+				7FF840CE2C5C283E00C21C21 /* JokeWatch_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "JokeWatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,11 +333,13 @@
 				7F31DC8E2C53F77A00C7C85A /* Frameworks */,
 				7F31DC8F2C53F77A00C7C85A /* Resources */,
 				7FF840892C5BC92400C21C21 /* Embed Foundation Extensions */,
+				7FF840D32C5C283E00C21C21 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				7FF840872C5BC92400C21C21 /* PBXTargetDependency */,
+				7FF840D12C5C283E00C21C21 /* PBXTargetDependency */,
 			);
 			name = JokeGenerator;
 			productName = JokeGenerator;
@@ -277,6 +399,59 @@
 			productReference = 7FF840742C5BC92100C21C21 /* JokeWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		7FF840AE2C5C283B00C21C21 /* JokeWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF840DA2C5C283E00C21C21 /* Build configuration list for PBXNativeTarget "JokeWatch Watch App" */;
+			buildPhases = (
+				7FF840AB2C5C283B00C21C21 /* Sources */,
+				7FF840AC2C5C283B00C21C21 /* Frameworks */,
+				7FF840AD2C5C283B00C21C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JokeWatch Watch App";
+			productName = "JokeWatch Watch App";
+			productReference = 7FF840AF2C5C283B00C21C21 /* JokeWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FF840BD2C5C283E00C21C21 /* JokeWatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF840DB2C5C283E00C21C21 /* Build configuration list for PBXNativeTarget "JokeWatch Watch AppTests" */;
+			buildPhases = (
+				7FF840BA2C5C283E00C21C21 /* Sources */,
+				7FF840BB2C5C283E00C21C21 /* Frameworks */,
+				7FF840BC2C5C283E00C21C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FF840C02C5C283E00C21C21 /* PBXTargetDependency */,
+			);
+			name = "JokeWatch Watch AppTests";
+			productName = "JokeWatch Watch AppTests";
+			productReference = 7FF840BE2C5C283E00C21C21 /* JokeWatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7FF840C72C5C283E00C21C21 /* JokeWatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF840DC2C5C283E00C21C21 /* Build configuration list for PBXNativeTarget "JokeWatch Watch AppUITests" */;
+			buildPhases = (
+				7FF840C42C5C283E00C21C21 /* Sources */,
+				7FF840C52C5C283E00C21C21 /* Frameworks */,
+				7FF840C62C5C283E00C21C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FF840CA2C5C283E00C21C21 /* PBXTargetDependency */,
+			);
+			name = "JokeWatch Watch AppUITests";
+			productName = "JokeWatch Watch AppUITests";
+			productReference = 7FF840C82C5C283E00C21C21 /* JokeWatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,6 +476,17 @@
 					7FF840732C5BC92100C21C21 = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					7FF840AE2C5C283B00C21C21 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					7FF840BD2C5C283E00C21C21 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 7FF840AE2C5C283B00C21C21;
+					};
+					7FF840C72C5C283E00C21C21 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 7FF840AE2C5C283B00C21C21;
+					};
 				};
 			};
 			buildConfigurationList = 7F31DC8C2C53F77A00C7C85A /* Build configuration list for PBXProject "JokeGenerator" */;
@@ -320,6 +506,9 @@
 				7F31DCA12C53F77C00C7C85A /* JokeGeneratorTests */,
 				7F31DCAB2C53F77C00C7C85A /* JokeGeneratorUITests */,
 				7FF840732C5BC92100C21C21 /* JokeWidgetExtension */,
+				7FF840AE2C5C283B00C21C21 /* JokeWatch Watch App */,
+				7FF840BD2C5C283E00C21C21 /* JokeWatch Watch AppTests */,
+				7FF840C72C5C283E00C21C21 /* JokeWatch Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +542,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FF840842C5BC92400C21C21 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF840AD2C5C283B00C21C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF840B92C5C283D00C21C21 /* Preview Assets.xcassets in Resources */,
+				7FF840B62C5C283D00C21C21 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF840BC2C5C283E00C21C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF840C62C5C283E00C21C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +609,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FF840AB2C5C283B00C21C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FDF60282C61170F00C1CF42 /* CategorySelector.swift in Sources */,
+				7FF840B42C5C283B00C21C21 /* ContentView.swift in Sources */,
+				7FDF602A2C6156ED00C1CF42 /* ShowJoke.swift in Sources */,
+				7FDF60262C61132100C1CF42 /* Jokes.swift in Sources */,
+				7FF840B22C5C283B00C21C21 /* JokeWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF840BA2C5C283E00C21C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF840C32C5C283E00C21C21 /* JokeWatch_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF840C42C5C283E00C21C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF840CD2C5C283E00C21C21 /* JokeWatch_Watch_AppUITests.swift in Sources */,
+				7FF840CF2C5C283E00C21C21 /* JokeWatch_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -414,6 +655,21 @@
 			isa = PBXTargetDependency;
 			target = 7FF840732C5BC92100C21C21 /* JokeWidgetExtension */;
 			targetProxy = 7FF840862C5BC92400C21C21 /* PBXContainerItemProxy */;
+		};
+		7FF840C02C5C283E00C21C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FF840AE2C5C283B00C21C21 /* JokeWatch Watch App */;
+			targetProxy = 7FF840BF2C5C283E00C21C21 /* PBXContainerItemProxy */;
+		};
+		7FF840CA2C5C283E00C21C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FF840AE2C5C283B00C21C21 /* JokeWatch Watch App */;
+			targetProxy = 7FF840C92C5C283E00C21C21 /* PBXContainerItemProxy */;
+		};
+		7FF840D12C5C283E00C21C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FF840AE2C5C283B00C21C21 /* JokeWatch Watch App */;
+			targetProxy = 7FF840D02C5C283E00C21C21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -755,6 +1011,151 @@
 			};
 			name = Release;
 		};
+		7FF840D42C5C283E00C21C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JokeWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = J55VB692GX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = JokeWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ahmadbushnaq.JokeGenerator;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmadbushnaq.JokeGenerator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		7FF840D52C5C283E00C21C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JokeWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = J55VB692GX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = JokeWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ahmadbushnaq.JokeGenerator;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmadbushnaq.JokeGenerator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		7FF840D62C5C283E00C21C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J55VB692GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmadbushnaq.JokeWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JokeWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JokeWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		7FF840D72C5C283E00C21C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J55VB692GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmadbushnaq.JokeWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JokeWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JokeWatch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		7FF840D82C5C283E00C21C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J55VB692GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmadbushnaq.JokeWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "JokeWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		7FF840D92C5C283E00C21C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J55VB692GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmadbushnaq.JokeWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "JokeWatch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -799,6 +1200,33 @@
 			buildConfigurations = (
 				7FF8408A2C5BC92400C21C21 /* Debug */,
 				7FF8408B2C5BC92400C21C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF840DA2C5C283E00C21C21 /* Build configuration list for PBXNativeTarget "JokeWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF840D42C5C283E00C21C21 /* Debug */,
+				7FF840D52C5C283E00C21C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF840DB2C5C283E00C21C21 /* Build configuration list for PBXNativeTarget "JokeWatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF840D62C5C283E00C21C21 /* Debug */,
+				7FF840D72C5C283E00C21C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF840DC2C5C283E00C21C21 /* Build configuration list for PBXNativeTarget "JokeWatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF840D82C5C283E00C21C21 /* Debug */,
+				7FF840D92C5C283E00C21C21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

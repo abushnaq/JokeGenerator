@@ -10,7 +10,7 @@ import SwiftUI
 struct CategorySelector: View {
     @EnvironmentObject private var loadedJokes : LoadedJokes
     var body: some View {
-        List(loadedJokes.jokeCategories, id: \.self, selection: $loadedJokes.jokeCategory) { jokeType in
+        List(loadedJokes.jokeCategories, id: \.self, selection: $loadedJokes.selectedCategory) { jokeType in
                     Text(jokeType)
                 .foregroundStyle(jokeType == loadedJokes.jokeCategory ? .blue : .white)
                 }

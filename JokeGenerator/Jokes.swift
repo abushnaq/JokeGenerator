@@ -11,15 +11,54 @@ let defaultJokeCategory = "dad"
 public class LoadedJokes : ObservableObject {
     private var jokeFetcher : JokeFetcher = JokeFetcher()
     
-    @Published var jokeCategory : String?
+    @Published var jokeCategory : String = defaultJokeCategory
+    
     // default categories will get overwritten by result from API call
     @Published var jokeCategories : [String] = ["general","knock-knock","programming","dad"]
     
     @Published var jokes : [Joke] = [Joke]()
+        
+    public var jokeCount : [String] = ["5", "10", "15", "20", "25"]
+    @Published var numberOfJokes : String = "5"
+    public var selectedCategory : String?
+    {
+        get
+        {
+            if jokeCategory.isEmpty
+            {
+                return nil
+            }
+            return jokeCategory
+        }
+        set
+        {
+            if let newValue
+            {
+                jokeCategory = newValue
+            }
+        }
+    }
+    
+    func fetchRandomJokes() async
+    {
+        DispatchQueue.main.async
+        { [self] in
+            Task
+            {
+                jokes = await jokeFetcher.fetchRandomJokes(numberOfJokes)
+            }
+        }
+    }
     
     func fetchJokesByCategory() async
     {
-        jokes = await jokeFetcher.fetchJokesByCategory(jokeCategory ?? defaultJokeCategory)
+        DispatchQueue.main.async
+        { [self] in
+            Task
+            {
+                jokes = await self.jokeFetcher.fetchJokesByCategory(jokeCategory)
+            }
+        }
     }
     
     func fetchJokeCategories() async

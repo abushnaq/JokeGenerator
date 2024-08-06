@@ -7,40 +7,34 @@
 
 import SwiftUI
 
-public var jokeCount : [String] = ["5", "10", "15", "20", "25"]
 
 struct ContentView: View {
-    @State var jokeTypes : [String] = ["general","knock-knock","programming","dad"]
-
-    @State var numberOfJokes : String = "5"
-    @State var jokeCategory : String = "dad"
-    @State var jokes : [Joke] = [Joke]()
-    var jokeFetcher : JokeFetcher = JokeFetcher()
+    @StateObject var loadedJokes = LoadedJokes()
     var body: some View {
         VStack {
             GroupBox(label: Label("Jokes by category", systemImage: "arrow.down.circle.fill")) {
                     LabeledContent("Joke category") {
-                        Picker(selection: $jokeCategory, label: Text("Joke categories")) {
+                        Picker(selection: $loadedJokes.jokeCategory, label: Text("Joke categories")) {
                             
-                            ForEach(jokeTypes, id: \.self) {
-                                Text("\($0)").tag(jokeTypes.firstIndex(of: $0))
+                            ForEach($loadedJokes.jokeCategories, id: \.self) {
+                                Text("\($0.wrappedValue)").tag(loadedJokes.jokeCategories.firstIndex(of: $0.wrappedValue))
                                 }
                         }
                     }
                 Button("Make me categorically laugh") {
                     Task
                     {
-                        jokes = await jokeFetcher.fetchJokesByCategory(jokeCategory)
+                        await loadedJokes.fetchJokesByCategory()
                     }
                 }
             }
             
             GroupBox(label: Label("Random jokes", systemImage: "arrow.down.circle.fill")) {
                     LabeledContent("How many jokes shall we get?") {
-                        Picker(selection: $numberOfJokes, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
+                        Picker(selection: $loadedJokes.numberOfJokes, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
                             
-                            ForEach(jokeCount, id: \.self) {
-                                Text("\($0)").tag($0)
+                            ForEach($loadedJokes.jokeCount, id: \.self) {
+                                Text("\($0.wrappedValue)").tag($0.wrappedValue)
                                 }
                             
                         }
@@ -48,13 +42,13 @@ struct ContentView: View {
                 Button("Make me randomly laugh") {
                     Task
                     {
-                        jokes = await jokeFetcher.fetchRandomJokes(numberOfJokes)
+                        await loadedJokes.fetchRandomJokes()
                     }
                 }
             }
             
             List {
-                ForEach(jokes, id: \.self) { joke in
+                ForEach(loadedJokes.jokes, id: \.self) { joke in
                     VStack(alignment: .leading, content: {
                         Label(joke.setup, systemImage: "questionmark.app.fill")
                         Label(joke.punchline, systemImage: "rectangle.3.group.bubble.fill")
@@ -64,11 +58,13 @@ struct ContentView: View {
             }
         }.onAppear {
             Task {
-                jokeTypes = await jokeFetcher.fetchJokeCategories()
-                if let firstType = jokeTypes.first
-                {
-                    jokeCategory = firstType
-                }
+                await loadedJokes.fetchJokeCategories()
+                
+//                jokeTypes = await jokeFetcher.fetchJokeCategories()
+//                if let firstType = jokeTypes.first
+//                {
+//                    jokeCategory = firstType
+//                }
             }
         }
         .padding()

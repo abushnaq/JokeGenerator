@@ -9,8 +9,7 @@ import WidgetKit
 import SwiftUI
 
 struct Provider: AppIntentTimelineProvider {
-    var jokeFetcher : JokeFetcher = JokeFetcher()
-    var jokeCategory : String = "general"
+    var jokeLoader : LoadedJokes = LoadedJokes()
     
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), configuration: ConfigurationAppIntent())
@@ -31,8 +30,8 @@ struct Provider: AppIntentTimelineProvider {
             entries.append(entry)
         }
 
-        let jokes = await jokeFetcher.fetchJokesByCategory(jokeCategory)
-        if let firstJoke = jokes.first
+        await jokeLoader.fetchJokesByCategory()
+        if let firstJoke = jokeLoader.jokes.first
         {
             entries.first?.configuration.setup = firstJoke.setup
             entries.first?.configuration.punchline = firstJoke.punchline
